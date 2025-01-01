@@ -26,7 +26,7 @@
   <body>
     <!-- =================== Header ================= -->
     <header class="section-header">
-      <div class="container">
+      <div class="container  header-container">
         <nav class="nav-header">
           <a href="./index.html" class="logo"
             >Web<span class="logo-part">Studio</span>
@@ -59,19 +59,27 @@
             </li>
           </ul>
         </address>
+
+        <button class="burger-btn" type="button" data-menu-open>
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+          </svg>
+        </button>
+
+
       </div>
     </header>
 
     <!--  ================= Main ================= -->
     <main class="section-main">
       <!-- ================ Hero =================-->
-      <section class="section-hero">
+       <section class="section-hero">
         <div class="container">
           <h1 class="title-hero">Effective Solutions for Your Business</h1>
 
           <button class="button-hero" type="button">Order Service</button>
         </div>
-      </section>
+      </section> 
       <!-- ================ Studio =====================  -->
       <section class="section-studio">
         <div class="container">
@@ -144,7 +152,8 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/our-team/mark-guerrero-1-S.jpg"
+                src="./images/our-team/mark-guerrero-1-x.jpg"
+                srcset="./images/our-team/mark-guerrero-1-x.jpg 1x, ./images/our-team/mark-guerrero-1@2x.jpg 2x"
                 alt="mark-guerrero-photo-1"
                 width="264"
                 height="260"
@@ -204,7 +213,8 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/our-team/tom-ford-2-S.jpg"
+                src="./images/people-office-x.jpg"
+                srcset="./images/our-team/tom-ford-2-x.jpg 1x, ./images/our-team/tom-ford-2@2x.jpg 2x"
                 alt="tom-ford-photo-2"
                 width="264"
                 height="260"
@@ -264,7 +274,8 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/our-team/camila-garcia-3-S.jpg"
+                src="./images/our-team/camila-garcia-3-x.jpg"
+                srcset="./images/our-team/camila-garcia-3-x.jpg 1x, ./images/our-team/camila-garcia-3@2x.jpg 2x"
                 alt="camila-garcia-photo-3"
                 width="264"
                 height="260"
@@ -324,7 +335,8 @@
             <li class="team-item">
               <img
                 class="team-photo"
-                src="./images/our-team/daniel-wilson-4-S.jpg"
+                src="./images/our-team/daniel-wilson-4-x.jpg"
+                srcset="./images/our-team/daniel-wilson-4-x.jpg 1x, ./images/our-team//daniel-wilson-4@2x.jpg 2x"
                 alt="daniel-wilson-photo-4"
                 width="264"
                 height="260"
@@ -384,7 +396,7 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> 
       <!-- ============= Our Portfolio =================== -->
       <section class="section-portfolio">
         <div class="container">
@@ -393,13 +405,18 @@
           <ul class="portfolio-list">
             <li class="portfolio-item">
               <div class="portfolio-marketing-photo">
+
+                <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/our-portfolio/desktop/banking-app-desktop-1x.jpg 1x, ./images/our-portfolio/desktop/banking-app-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/our-portfolio/tablet/banking-app-tablet-1x.jpg 1x, ./images/our-portfolio/tablet/banking-app-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/our-portfolio/mobile/banking-app-mobile-1x.jpg 1x, ./images/our-portfolio/mobile/banking-app-mobile@2x.jpg 2x">
                 <img
                   class="portfolio-photo"
-                  src="./images/our-portfolio/banking-app-1-S.jpg"
+                  src="./images/our-portfolio/desktop/banking-app-desktop-1x.jpg"
                   alt="banking-app"
-                  width="360"
-                  height="300"
                 />
+                </picture>
 
                 <p class="portfolio-marketing-overley-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -416,13 +433,19 @@
 
             <li class="portfolio-item">
               <div class="portfolio-marketing-photo">
+                <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/our-portfolio/desktop/cashless-payment-desktop-1x.jpg 1x, ./images/our-portfolio/desktop/cashless-payment-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/our-portfolio/tablet/cashless-payment-tablet-1x.jpg 1x, ./images/our-portfolio/tablet/cashless-payment-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/our-portfolio/mobile/cashless-payment-mobile-1x.jpg 1x, ./images/our-portfolio/mobile/cashless-payment-mobile@2x.jpg 2x">
                 <img
+              
                   class="portfolio-photo"
-                  src="./images/our-portfolio/cashless-payment-2-S.jpg"
+                  src="./images/our-portfolio/desktop/cashless-payment-desktop-1x.jpg"
                   alt="cashless-payment"
-                  width="360"
-                  height="300"
+                  
                 />
+                </picture>
 
                 <p class="portfolio-marketing-overley-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -436,15 +459,24 @@
                 <p class="portfolio-photo-dscr">Marketing</p>
               </div>
             </li>
+
             <li class="portfolio-item">
+
               <div class="portfolio-marketing-photo">
+                
+                <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/our-portfolio/desktop/meditation-app-desktop-1x.jpg 1x, ./images/our-portfolio/desktop/meditation-app-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/our-portfolio/tablet/meditation-app-tablet-1x.jpg 1x, ./images/our-portfolio/tablet/meditation-app-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/our-portfolio/mobile/meditation-app-mobile-1x.jpg 1x, ./images/our-portfolio/mobile/meditation-app-mobile@2x.jpg 2x">
                 <img
+                
                   class="portfolio-photo"
-                  src="./images/our-portfolio/meditation-app-3-S.jpg"
+                  src="./images//our-portfolio/desktop/meditation-app-desktop-1x.jpg"
                   alt="meditation-app"
-                  width="360"
-                  height="300"
+                 
                 />
+                </picture>
 
                 <p class="portfolio-marketing-overley-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -458,15 +490,23 @@
                 <p class="portfolio-photo-dscr">App</p>
               </div>
             </li>
+
             <li class="portfolio-item">
               <div class="portfolio-marketing-photo">
+                <div class="portfolio-marketing-photo">
+                <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/our-portfolio/desktop/taxi-service-desktop-1x.jpg 1x, ./images/our-portfolio/desktop/taxi-service-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/our-portfolio/tablet/taxi-service-tablet-1x.jpg 1x, ./images/our-portfolio/tablet/taxi-service-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/our-portfolio/mobile/taxi-service-mobile-1x.jpg 1x, ./images/our-portfolio/mobile/taxi-service-mobile@2x.jpg 2x">
                 <img
+                
                   class="portfolio-photo"
-                  src="./images/our-portfolio/taxi-service-4-S.jpg"
+                  src="./images/our-portfolio/desktop/taxi-service-desktop-1x.jpg"
                   alt="taxi-service"
-                  width="360"
-                  height="300"
+                  
                 />
+                </picture>
 
                 <p class="portfolio-marketing-overley-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -482,13 +522,19 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-marketing-photo">
+                <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/our-portfolio/desktop/screen-illustrations-desktop-1x.jpg 1x, ./images/our-portfolio/desktop/screen-illustrations-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/our-portfolio/tablet/screen-illustrations-tablet-1x.jpg 1x, ./images/our-portfolio/tablet/screen-illustrations-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/our-portfolio/mobile/screen-illustrations-mobile-1x.jpg 1x, ./images/our-portfolio/mobile/screen-illustrations-mobile@2x.jpg 2x">
                 <img
+                
                   class="portfolio-photo"
-                  src="./images/our-portfolio/screen-illustrations-5-S.jpg"
+                  src="./images/our-portfolio/desktop/screen-illustrations-desktop-1x.jpg"
                   alt="screen-illustrations"
-                  width="360"
-                  height="300"
+                 
                 />
+                </picture>
 
                 <p class="portfolio-marketing-overley-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -504,13 +550,19 @@
             </li>
             <li class="portfolio-item">
               <div class="portfolio-marketing-photo">
+                <picture>
+                <source media="(min-width: 1158px)"
+                 srcset="./images/our-portfolio/desktop/online-courses-desktop-1x.jpg 1x, ./images/our-portfolio/desktop/online-courses-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./images/our-portfolio/tablet/online-courses-tablet-1x.jpg 1x, ./images/our-portfolio/tablet/online-courses-tablet@2x.jpg 2x">
+                <source media="(max-width: 767px)" srcset="./images/our-portfolio/mobile/online-courses-mobile-1x.jpg 1x, ./images/our-portfolio/mobile/online-courses-mobile@2x.jpg 2x">
                 <img
+                
                   class="portfolio-photo"
-                  src="./images/our-portfolio/online-courses-6-S.jpg"
+                  src="./images/our-portfolio//desktop/online-courses-desktop-1x.jpg"
                   alt="online-courses"
-                  width="360"
-                  height="300"
+                  
                 />
+                </picture>
 
                 <p class="portfolio-marketing-overley-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -527,7 +579,7 @@
           </ul>
         </div>
       </section>
-    </main>
+    </main> -->
 
     <!-- ========== Footer ================= -->
     <footer class="section-footer">
@@ -599,11 +651,10 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> 
 
     <!-- ======= Modal ========= -->
-
-    <div class="backdrop is-open">
+ <div class="backdrop is-open">
       <div class="modal">
         <button type="button" class="modal-close">
           <svg class="icon-close" width="8" height="8">
@@ -696,7 +747,7 @@
             >
           </div>
           <button class="form-button-submit" type="submit">Send</button>
-        </form>
+        </form> 
       </div>
     </div>
   </body>
