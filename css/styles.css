@@ -928,6 +928,7 @@ footer .logo {
   letter-spacing: 0.04em;
   color: #fff;
   margin-bottom: 16px;
+  padding-left: 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -989,8 +990,7 @@ footer .logo {
 }
 
 /* ==== Modal ======= */
-
-/* .backdrop {
+.backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -1026,7 +1026,7 @@ footer .logo {
     min-height: 584px;
     padding: 72px 24px 24px 24px;
   }
-} */
+}
 
 /* .backdrop.is-open {
   opacity: 1;
@@ -1255,11 +1255,11 @@ footer .logo {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.mobile-menu.is-open {
+/* .mobile-menu.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-}
+} */
 
 .mobile-menu-container {
   position: relative;
@@ -1275,14 +1275,100 @@ footer .logo {
   position: absolute;
   top: 24px;
   right: 24px;
+  border-radius: 50%;
+  stroke-width: 1px;
+  stroke: rgba(0, 0, 0, 0.1);
+  width: 24px;
+  height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mobile-menu-nav {
   margin-bottom: auto;
 }
 
+.mobile-menu-close:hover,
+.mobile-menu-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+
+.mobile-menu-close:hover .icon-close,
+.mobile-menu-close:focus .icon-close {
+  fill: #ffffff;
+}
+
 @media screen and (min-width: 768px) {
   .mobile-menu {
     display: none;
   }
+}
+
+.mobile-nav-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.mobile-nav-link.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.mobile-address-link.current {
+  position: relative;
+  color: #404bbf;
+}
+
+.mobile-address-list {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+  margin-bottom: 48px;
+}
+
+.team-social-media.mobile {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+.mobile-address-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2e2f42;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-nav-link:hover,
+.mobile-nav-link:focus,
+.mobile-address-link:hover,
+.mobile-address-link:focus {
+  color: #404bbf;
 }

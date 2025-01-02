@@ -550,7 +550,7 @@ footer .logo {
 
 /* ======= Modal ======= */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -778,36 +778,4 @@ footer .logo {
   cursor: pointer;
   margin: 24px 96px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-
-/* ====== Mobile Menu ========= */
-
- <div class="mobile-menu" data-menu>
-        <div class="container mobile-menu-container">
-          <button class="mobile-menu-close" data-menu-close>Close</button>
-          <nav class="mobile-menu-nav">Navigation</nav>
-          <address>Address</address>
-          <div>Soc link</div>
-        </div>
-      </div>
-    </header>
-    <main>
-      <section class="hidden">
-        <button class="hero-btn" type="button" data-modal-open>
-          Order Service
-        </button>
-      </section>
-      <section class="hidden">Section benefits</section>
-      <section class="hidden">Section Our Team</section>
-      <section class="hidden">Section Our Portfolio</section>
-    </main>
-    <footer class="hidden">Footer</footer>
-
-    <div class="backdrop hidden" data-modal>
-      <div class="modal">
-        <button class="modal-close-btn" type="button" data-modal-close>
-          close
-        </button>
-      </div>
-    </div>
+} */
